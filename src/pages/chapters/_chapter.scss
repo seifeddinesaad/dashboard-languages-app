@@ -1,0 +1,90 @@
+.chapters {
+  margin: 2rem;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 1.6rem;
+    }
+    .btn {
+      border: none;
+      background-color: #2e6ff1;
+      border-radius: 10px;
+      color: white;
+      width: 181px;
+      cursor: pointer;
+    }
+    .popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0px 0px 10px grey;
+      border-radius: 10px;
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      width: 25rem;
+      .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      form {
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .lessonImg {
+      width: 100%;
+    }
+  }
+}
+
+// label {
+//   display: block;
+//   margin-bottom: 10px;
+// }
+
+// input[type="text"],
+// input[type="email"] {
+//   width: 100%;
+//   padding: 10px;
+//   margin-bottom: 20px;
+//   border-radius: 5px;
+//   border: 1px solid grey;
+// }
+
+// button[type="submit"] {
+//   background-color: blue;
+//   color: white;
+//   padding: 10px 20px;
+//   border-radius: 5px;
+//   border: none;
+//   cursor: pointer;
+// }
+
+// button[type="submit"]:hover {
+//   background-color: lightblue;
+// }
+
+// button[type="button"] {
+//   background-color: grey;
+//   color: white;
+//   padding: 10px 20px;
+//   border-radius: 5px;
+//   border: none;
+//   cursor: pointer;
+//   float: right;
+// }
+
+// button[type="button"]:hover {
+//   background-color: darkgrey;
+// }
