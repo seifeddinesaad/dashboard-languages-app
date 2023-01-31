@@ -5,7 +5,15 @@
   box-sizing: border-box;
   font-family: "Tajawal", sans-serif;
   text-decoration: none;
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none;
+    color: inherit;
+  }
 }
+
 .sidebar {
   background-color: #fff;
   height: 100vh;
@@ -21,11 +29,25 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 1rem;
     color: black;
     li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.4rem;
       color: black;
+      .align {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        p {
+          justify-self: center;
+        }
+      }
     }
   }
 }
@@ -36,5 +58,43 @@
     .logo {
       padding: 0.5rem;
     }
+  }
+}
+@media only screen and (max-width: 508px) {
+  .sidebar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 508px) {
+  .menu {
+    display: none !important;
+  }
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.3rem;
+  margin-right: 0.5rem;
+  .show {
+    display: none;
+  }
+  .sidebar__fullscreen {
+    position: absolute;
+    width: 100%;
+    // background-color: red;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 10vh;
+  }
+}
+
+.active {
+  &:first-child {
+    color: #2e6ff1;
+  }
+  p {
+    color: #2e6ff1;
   }
 }

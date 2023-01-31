@@ -2,27 +2,27 @@ const links = [
   {
     id: "1",
     name: "الفصول",
-    icon: "category",
+    icon: "BiCategory",
   },
   {
     id: "2",
     name: "الدروس",
-    icon: "message",
+    icon: "AiOutlineMessage",
   },
   {
     id: "3",
     name: "المستويات",
-    icon: "task-square",
+    icon: "BsCardChecklist",
   },
   {
     id: "4",
     name: "المستخدمين",
-    icon: "profile-2user",
+    icon: "FiUsers",
   },
   {
     id: "5",
     name: "إعدادات",
-    icon: "setting-2",
+    icon: "SlSettings",
   },
 ];
 export default links;

@@ -75,3 +75,18 @@
     width: 15rem !important;
   }
 }
+
+@media only screen and (max-width: 382px) {
+  .searchbar {
+    width: 100%;
+    padding: 0 !important;
+  }
+  .Navbar {
+    width: 20rem;
+  }
+}
+@media only screen and (max-width: 509px) {
+  .Navbar {
+    border-bottom: 1px solid #fff;
+  }
+}
