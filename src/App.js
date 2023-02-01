@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar, Sidebar } from "./layout/index";
-import { Chapters, Lessons } from "./pages/index";
+import { Chapters, Exercices, Lessons } from "./pages/index";
 
 function App() {
   //
@@ -18,7 +18,7 @@ function App() {
           <Routes>
             <Route path="/chapters" element={<Chapters />} />
             <Route path="/lessons/:id" element={<Lessons />} />
-            <Route path="/lesson/:id/id1" element={<Lessons />} />
+            <Route path="/lessons/:id/:id1" element={<Exercices />} />
           </Routes>
         </div>
       </div>

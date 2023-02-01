@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin-top: 1rem;
     .lesson {
       display: flex;
       .number {
@@ -66,6 +67,37 @@
         width: 58px;
         border-radius: 50%;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 752px) {
+  .hide {
+    display: none;
+  }
+  .lesson__content,
+  .about__lesson,
+  .exercice__content,
+  .about__exercice {
+    flex-direction: column;
+  }
+  .size {
+    font-size: 1.2rem !important;
+  }
+  .top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 6rem;
+    .btn {
+      padding: 1rem !important;
+      margin: 0 !important;
+    }
+  }
+  .title1 {
+    p {
+      text-align: center;
     }
   }
 }

@@ -2,7 +2,7 @@
   height: 88px;
   border-bottom: 0.1rem solid #c7c4c4;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-left: 2px;
   padding-right: 2px;
 
@@ -83,6 +83,7 @@
   .searchbar {
     width: 100%;
     padding: 0 !important;
+    padding-left: 1rem !important;
   }
 }
 @media only screen and (max-width: 509px) {
