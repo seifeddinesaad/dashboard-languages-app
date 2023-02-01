@@ -1,8 +1,6 @@
 import chapters from "../../data/data";
-import CardActionArea from "@mui/material/Card";
 import { useState } from "react";
-import { ImCross } from "react-icons/im";
-import { GrAddCircle } from "react-icons/gr";
+import { Popup } from "../../components/popup";
 import Button from "../../components/button";
 import { Link } from "react-router-dom";
 export const Chapters = () => {
@@ -36,60 +34,15 @@ export const Chapters = () => {
         </div>
         <div>
           {isOpen && (
-            <div className="popup">
-              <div className="head">
-                <p>أضف فصل جديد</p>
-                <ImCross cursor="pointer" onClick={() => setIsOpen(false)} />
-              </div>
-              <form>
-                <div className="select__img">
-                  <GrAddCircle fontSize="2rem" />
-                  <input
-                    type="file"
-                    className="file__btn"
-                    onChange={handleChange3}
-                  />
-                </div>
-
-                <label>
-                  إسم الفصل
-                  <input
-                    type="text"
-                    name="lesson"
-                    onChange={handleChange1}
-                    required
-                  />
-                </label>
-                <label>
-                  وصف
-                  <textarea name="descript" onChange={handleChange2} required />
-                </label>
-                <div className="popup__buttons">
-                  <button
-                    className="submit__btn"
-                    type="submit"
-                    onClick={(e) => {
-                      e.preventDefault();
-
-                      if (lesson && description && img) {
-                        chapters.push(state);
-                        setIsOpen(false);
-                        console.log(chapters, "chapters");
-                      }
-                    }}
-                  >
-                    حفظ
-                  </button>
-                  <button
-                    className="reset__btn"
-                    type="submit"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    إلغاء
-                  </button>
-                </div>
-              </form>
-            </div>
+            <Popup
+              handler={setIsOpen}
+              lesson={lesson}
+              description={description}
+              img={img}
+              handlerChange1={handleChange1}
+              handlerChange2={handleChange2}
+              handlerChange3={handleChange3}
+            />
           )}
         </div>
         <div className="bottom">

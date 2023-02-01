@@ -1,15 +1,25 @@
 import chapters from "../../data/data";
 import Button from "../../components/button";
-import img from "./assets/Group 3232.png";
+import image from "./assets/Group 3232.png";
+import { Popup } from "../../components/popup";
 import { useParams } from "react-router-dom";
+import { useState } from "react";
 export const Lessons = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   let { id } = useParams();
-  console.log(id, "etoile sportive du sahel");
+
   return (
     <div className="chapters">
       <div className="top">
         <p>أكملْ دورة اللغة الإنجليزية</p>
-        <Button width="181px" className="btn" text="أضف درس جديد" />
+        <Button
+          width="181px"
+          className="btn"
+          text="أضف درس جديد"
+          setIsopen={setIsOpen}
+        />
+        <div>{isOpen && <Popup handler={setIsOpen} id={id} />}</div>
       </div>
       <div className="content">
         {chapters[id].lessons.map((lesson, index) => {
@@ -20,7 +30,7 @@ export const Lessons = () => {
               </div>
               <div className="lesson__content">
                 <div className="about__lesson">
-                  <img src={img} alt="suiii" />
+                  <img src={image} alt="suiii" />
                   <img className="img" src={lesson.imageUrl} alt="" />
                   <div className="title">
                     <p>
