@@ -2,7 +2,7 @@ import chapters from "../../data/data";
 import Button from "../../components/button";
 import image from "./assets/Group 3232.png";
 import { Popup } from "../../components/popup";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
 export const Lessons = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,13 +34,15 @@ export const Lessons = () => {
                   <img className="img" src={lesson.imageUrl} alt="" />
                   <div className="title">
                     <p>
-                      الدرس {index + 1} : {lesson.title}
+                      الدرس {index + 1} : {lesson.lessonName}
                     </p>
                     <p>{lesson.description}</p>
                   </div>
                 </div>
 
-                <button className="open__btn">إفتح</button>
+                <Link to={`/lessons/${id}/${index}`}>
+                  <button className="open__btn">إفتح</button>
+                </Link>
               </div>
             </div>
           );

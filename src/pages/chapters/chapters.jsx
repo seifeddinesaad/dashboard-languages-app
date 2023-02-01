@@ -32,19 +32,7 @@ export const Chapters = () => {
           <p>الفصول</p>
           <Button className="btn" setIsopen={setIsOpen} text="أضف فصل جديد" />
         </div>
-        <div>
-          {isOpen && (
-            <Popup
-              handler={setIsOpen}
-              lesson={lesson}
-              description={description}
-              img={img}
-              handlerChange1={handleChange1}
-              handlerChange2={handleChange2}
-              handlerChange3={handleChange3}
-            />
-          )}
-        </div>
+
         <div className="bottom">
           {chapters.map((chapter, index) => {
             return (
@@ -71,6 +59,19 @@ export const Chapters = () => {
             );
           })}
         </div>
+      </div>
+      <div>
+        {isOpen && (
+          <Popup
+            handler={setIsOpen}
+            lesson={lesson}
+            description={description}
+            img={img}
+            handlerChange1={handleChange1}
+            handlerChange2={handleChange2}
+            handlerChange3={handleChange3}
+          />
+        )}
       </div>
     </>
   );

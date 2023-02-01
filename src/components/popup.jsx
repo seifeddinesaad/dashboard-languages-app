@@ -16,6 +16,7 @@ export const Popup = ({ handler, id }) => {
   const handleChange3 = (e) => {
     setImg(URL.createObjectURL(e.target.files[0]));
   };
+
   const state = {
     imageUrl: img,
     lessonName: lesson,

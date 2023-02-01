@@ -19,6 +19,9 @@
   height: 100vh;
   border-left: 0.1rem solid #c7c4c4;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .logo {
     padding: 2rem;
   }
@@ -42,10 +45,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0.5rem;
-
+        gap: 1rem;
         p {
-          justify-self: center;
+          padding-top: 0.4rem;
         }
       }
     }
@@ -74,8 +76,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 1.3rem;
-  margin-right: 0.5rem;
+  padding-top: 2rem;
+  margin-right: 1.5rem;
   .show {
     display: none;
   }

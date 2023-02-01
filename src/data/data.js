@@ -6,31 +6,32 @@ const chapters = [
     description: "تعلم الإنكليزية مع هذه الدراما التلفزيونية المسلية",
     lessons: [
       {
-        title: "أساسيات السفر",
+        lessonName: "أساسيات السفر",
         imageUrl:
           "https://img.freepik.com/free-photo/full-shot-travel-concept-with-landmarks_23-2149153258.jpg?3",
         description: "تعلم بعض المفردات و العبارات الأساسية",
+        exercices: [],
       },
       {
-        title: "أنا هنا في عطلة ",
+        lessonName: "أنا هنا في عطلة ",
         imageUrl:
           "https://dizziness-and-balance.com/treatment/images/airplane.jpg",
         description: "إجراء محادثة",
       },
       {
-        title: "التجول",
+        lessonName: "التجول",
         imageUrl:
           "https://media.cntraveler.com/photos/5be477cf2e350417aea9dc08/master/w_1600%2Cc_limit/CNT_Intel_Plane_taking_off_TM-Detwiler_110718.jpg",
         description: "تعلم مفردات و عبارات تساعدك على التجوال ",
       },
       {
-        title: "كيف يمكنني إلغاء تذكرتي / بطاقتي؟",
+        lessonName: "كيف يمكنني إلغاء تذكرتي / بطاقتي؟",
         imageUrl:
           "https://media.11alive.com/assets/WXIA/images/ed1259b3-ea71-428b-b93f-da5c8cfffdc9/ed1259b3-ea71-428b-b93f-da5c8cfffdc9_1920x1080.jpg",
         description: "شراء تذكرة النقل",
       },
       {
-        title: "أساسيات السفر",
+        lessonName: "أساسيات السفر",
         imageUrl:
           "https://media.istockphoto.com/id/1285301614/photo/young-man-arms-outstretched-by-the-sea-at-sunrise-enjoying-freedom-and-life-people-travel.jpg?s=612x612&w=0&k=20&c=0QW6GnkuFNYcPZhy26XVHuTc2avJTK8u6l_1iT0SlZk=",
         description: "تعلم بعض المفردات الأساسية",
@@ -44,13 +45,13 @@ const chapters = [
     description: "دروس لمستويات المُبتدئ، والمُتوسط، والمُتقدِّم",
     lessons: [
       {
-        title: "التمخميخ بالإنجليزية",
+        lessonName: "التمخميخ بالإنجليزية",
         imageUrl:
           "https://media.self.com/photos/622912847b959736301bfb91/2:1/w_1280,c_limit/GettyImages-1301412050.jpg",
         description: "تعلم أكل الدلاع و البطيخ",
       },
       {
-        title: "أسماء الحيونات",
+        lessonName: "أسماء الحيونات",
         imageUrl: "https://a-z-animals.com/media/2021/01/mammals-400x300.jpg",
         description: "تعلم جميع أسماء الحيونات ",
       },
@@ -69,19 +70,19 @@ const chapters = [
     description: "طوّرْ مهاراتك وتحدّثْ بمزيدٍ من الثقة",
     lessons: [
       {
-        title: "الرياضة بالإنجليزية ",
+        lessonName: "الرياضة بالإنجليزية ",
         imageUrl:
           "https://media.npr.org/assets/img/2020/06/10/gettyimages-200199027-001-b5fb3d8d8469ab744d9e97706fa67bc5c0e4fa40-s1100-c50.jpg",
         description: "أهمية الرياضة في حياتنا",
       },
       {
-        title: "كرة القدم ",
+        lessonName: "كرة القدم ",
         imageUrl:
           "https://upload.wikimedia.org/wikipedia/commons/1/1d/Football_Pallo_valmiina-cropped.jpg",
         description: "الرياضة الأكثر شعبية في التاريخ",
       },
       {
-        title: "المفردات الصعبة",
+        lessonName: "المفردات الصعبة",
         imageUrl:
           "https://eslforums.com/wp-content/uploads/2019/10/positive-words-2.jpg",
         description: "تعلم كيف تكون أسطورة ",
@@ -91,3 +92,11 @@ const chapters = [
 ];
 
 export default chapters;
+
+// exercices: [
+//   {
+//     exerciceName,
+//     imageUrl,
+//     description,
+//   },
+// ];

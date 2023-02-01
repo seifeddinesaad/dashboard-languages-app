@@ -1,0 +1,26 @@
+///// 1)
+@media only screen and (max-width: 662px) {
+  .popup {
+    width: 30rem !important;
+  }
+}
+///// 2)
+@media only screen and (max-width: 488px) {
+  .popup {
+    width: 20rem !important;
+  }
+}
+@media only screen and (max-width: 335px) {
+  .popup {
+    width: 15rem !important;
+  }
+}
+///// 3)
+// @media only screen and (max-width: 442px) {
+//   .popup {
+//     width: 100% !important;
+//     height: 60vh !important;
+//     top: none !important;
+//     left: none !important;
+//   }
+// }

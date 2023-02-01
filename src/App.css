@@ -1,6 +1,6 @@
 .layout {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 277px 5fr;
   grid-template-rows: 1fr 17fr;
 }
 .sidebar__container {
@@ -11,6 +11,21 @@
 }
 .outlet {
   grid-row: 2/3;
+}
+@media only screen and (max-width: 441px) {
+  .layout {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .layout {
+    grid-template-columns: 180px 5fr;
+  }
+}
+@media only screen and (max-width: 553px) {
+  .layout {
+    grid-template-columns: 5fr;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
