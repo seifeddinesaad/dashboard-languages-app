@@ -12,8 +12,26 @@
 }
 @media only screen and (max-width: 335px) {
   .popup {
-    width: 15rem !important;
+    width: 17rem !important;
   }
+  .select__img span {
+    height: 50px !important;
+    width: 50px !important;
+  }
+}
+.file__btn {
+  display: none;
+}
+.upload__btn {
+  width: 152px;
+  height: 43px;
+  border: 1.5px solid #ebebeb;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0.8rem;
 }
 ///// 3)
 // @media only screen and (max-width: 442px) {

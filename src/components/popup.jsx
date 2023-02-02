@@ -1,6 +1,6 @@
 import React from "react";
 import { ImCross } from "react-icons/im";
-import { GrAddCircle } from "react-icons/gr";
+import { AiOutlinePlus } from "react-icons/ai";
 import chapters from "../data/data";
 import { useState } from "react";
 export const Popup = ({ handler, id }) => {
@@ -22,6 +22,17 @@ export const Popup = ({ handler, id }) => {
     lessonName: lesson,
     description: description,
   };
+  const style = {
+    width: "78px",
+    height: "78px",
+    borderRadius: "50%",
+    backgroundColor: "#DBDBDB",
+    color: "gray",
+    fontSize: "1rem",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
 
   return (
     <div className="popup">
@@ -31,8 +42,20 @@ export const Popup = ({ handler, id }) => {
       </div>
       <form>
         <div className="select__img">
-          <GrAddCircle fontSize="2rem" />
-          <input type="file" className="file__btn" onChange={handleChange3} />
+          <span style={style}>
+            <AiOutlinePlus fontSize="2rem" />
+          </span>
+          <input
+            type="file"
+            id="file"
+            className="file__btn"
+            onChange={handleChange3}
+          />
+          <label htmlFor="file" className="upload__btn">
+            {" "}
+            اختر ملف
+          </label>
+          {!img ? "لم يتم إختيار ملف" : ""}
         </div>
 
         <label>
@@ -54,12 +77,12 @@ export const Popup = ({ handler, id }) => {
                 if (!id) {
                   chapters.push(state);
                   handler(false);
-                  console.log(chapters, "chapters");
                 } else {
                   chapters[id].lessons.push(state);
                   handler(false);
-                  console.log(chapters, "chapters");
                 }
+              } else {
+                alert("you should fill all the inputs :)");
               }
             }}
           >
