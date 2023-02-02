@@ -23,29 +23,40 @@
       border-radius: 10px;
       color: white;
       width: 181px;
+      height: 51px;
       float: left;
       cursor: pointer;
       display: flex;
       justify-content: center;
       align-items: center;
       margin-left: 30px;
+      font-family: "Tajawal";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      color: #ffffff;
     }
   }
 
   .bottom {
     display: grid;
 
-    grid-template-columns: repeat(auto-fill, minmax(18.125rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(289.86px, 1fr));
     .lessonImg {
       width: 100%;
       height: 186.14px;
-      border-top-left-radius: 6px;
-      border-top-right-radius: 6px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
     }
     .cardActionArea {
       background-color: #ffffff;
-      border: 1px solid gray;
-      border-radius: 6px;
+      border: 1px solid #dedede;
+      border-radius: 5px;
 
       height: 289.86px;
       .title {

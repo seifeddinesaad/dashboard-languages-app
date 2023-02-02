@@ -1,7 +1,7 @@
 const chapters = [
   {
     imageUrl:
-      "https://media.istockphoto.com/id/1047570732/vector/english.jpg?s=612x612&w=0&k=20&c=zgafUJxCytevU-ZRlrZlTEpw3mLlS_HQTIOHLjaSPPM=",
+      "https://thecityfix.com/wp-content/uploads/2019/05/Dario-London_IT.jpg",
     lessonName: "London Central",
     description: "تعلم الإنكليزية مع هذه الدراما التلفزيونية المسلية",
     lessons: [
@@ -98,7 +98,7 @@ const chapters = [
   },
   {
     imageUrl:
-      "https://media.istockphoto.com/id/1313088031/vector/english.jpg?s=612x612&w=0&k=20&c=Mslm0FNFCeExaXw1B-aNSY89W_cB3emg03CkUDHeIbU=",
+      "https://www.eventindustrynews.com/wp-content/uploads/2020/09/Central-London-Alliance-launches-for-a-resurgent-London.jpg",
     lessonName: "أكملْ دورة اللغة الإنجليزية",
     description: "دروس لمستويات المُبتدئ، والمُتوسط، والمُتقدِّم",
     lessons: [
@@ -201,7 +201,7 @@ const chapters = [
   },
   {
     imageUrl:
-      "https://previews.123rf.com/images/luplupme/luplupme1907/luplupme190700594/129453972-british-english-language-learning-class-vector-illustration-brittish-flag-logo-england-dictionary-bi.jpg",
+      "https://img2.10bestmedia.com/Images/Photos/396722/GettyImages-1265900812_54_990x660.jpg",
     lessonName: "نطق اللغة الإنكليزيّة",
     description: "طوّرْ مهاراتك وتحدّثْ بمزيدٍ من الثقة",
     lessons: [
