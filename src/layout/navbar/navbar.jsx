@@ -1,10 +1,8 @@
 import { AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
 import { MdOutlineExpandMore } from "react-icons/md";
-
-import { useState } from "react";
 import { useGlobalContext } from "../../context/context";
 export const Navbar = () => {
-  const { handleChange, result } = useGlobalContext();
+  const { handleChange } = useGlobalContext();
 
   return (
     <div className="Navbar">
@@ -16,7 +14,6 @@ export const Navbar = () => {
           type="text"
           placeholder="إبحث عن أي شيئ"
           onChange={(e) => {
-            console.log(e.target);
             handleChange(e);
           }}
         />

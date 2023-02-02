@@ -1,6 +1,6 @@
 import { BsCardChecklist } from "react-icons/bs";
 import { BiCategory } from "react-icons/bi";
-import { AiOutlineMessage, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMessage } from "react-icons/ai";
 import { FiUsers } from "react-icons/fi";
 import { SlSettings } from "react-icons/sl";
 export { default as category } from "../assets/category.svg";
@@ -14,7 +14,7 @@ const links = [
     id: "1",
     name: "الفصول",
     icon: <BiCategory fontSize="1.6rem" />,
-    englishName: "chapters",
+    englishName: "",
   },
   {
     id: "2",
