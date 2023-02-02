@@ -1,13 +1,16 @@
 import chapters from "../../data/data";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Popup } from "../../components/popup";
 import Button from "../../components/button";
 import { Link } from "react-router-dom";
+import { useGlobalContext } from "../../context/context";
 export const Chapters = () => {
+  const { condition, result, filtredData, chapters } = useGlobalContext();
   const [isOpen, setIsOpen] = useState(false);
   const [lesson, setLesson] = useState("");
   const [description, setDescription] = useState("");
   const [img, setImg] = useState("");
+
   const handleChange1 = (event) => {
     setLesson(event.target.value);
   };
@@ -23,7 +26,6 @@ export const Chapters = () => {
     lessonName: lesson,
     description: description,
   };
-  console.log(state, "state");
   return (
     <>
       <div className={isOpen ? "background__blur" : "none"}></div>

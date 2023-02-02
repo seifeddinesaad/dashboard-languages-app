@@ -2,7 +2,6 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar, Sidebar } from "./layout/index";
 import { Chapters, Exercices, Lessons } from "./pages/index";
-
 function App() {
   //
   return (
